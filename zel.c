@@ -192,7 +192,7 @@ int main()
 void setup()
 {
         SDL_Init(SDL_INIT_VIDEO);
-        SDL_Window *win = SDL_CreateWindow("Zel",
+        SDL_Window *win = SDL_CreateWindow("Zel-d",
                 SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, W, H, SDL_WINDOW_SHOWN);
         renderer = SDL_CreateRenderer(win, -1, SDL_RENDERER_PRESENTVSYNC);
         if(!renderer) exit(fprintf(stderr, "Could not create SDL renderer\n"));
