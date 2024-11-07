@@ -1,3 +1,3 @@
-export DYLD_FRAMEWORK_PATH=../common/macos
+export DYLD_FRAMEWORK_PATH=./macos
 
-cc -I../common/macos/SDL2.framework/Headers -I../common/macos/SDL2_ttf.framework/Headers -F../common/macos -framework SDL2 -framework SDL2_ttf -o zel zel.c && ./zel
+clang -I./macos/SDL2.framework/Headers -I./macos/SDL2_ttf.framework/Headers -F./macos -framework SDL2 -framework SDL2_ttf -o zel zel.c && ./zel
