@@ -170,9 +170,10 @@ void update_player(int i)
 
                 if (--p.hp <= 0)
                 {
-                        p.state = PL_DYING;
-                        p.stun = 100;
-                        continue;
+                        // p.state = PL_DYING;
+                        // p.stun = 100;
+                        // continue;
+                        exit(DIED_CODE);
                 }
 
                 p.stun = 50;

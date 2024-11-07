@@ -61,6 +61,8 @@
 
 #define OPEN 180       // invisible open, walkable space
 
+#define DIED_CODE 123 // the exit code when you die
+
 enum enemytypes { // these match their positions in sprites.bmp
         SCREW = 120,
         BOARD = 135,
