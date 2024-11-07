@@ -163,6 +163,7 @@ int ytileof(SDL_Rect pos) { return (pos.y + pos.h) / BS; }
 //the entry point and main game loop
 int main()
 {
+        srand(0);
         ow_gen();
         setup();
         new_game();
@@ -188,8 +189,6 @@ int main()
 //initial setup to get the window and rendering going
 void setup()
 {
-        srand(time(NULL));
-
         SDL_Init(SDL_INIT_VIDEO);
         SDL_Window *win = SDL_CreateWindow("Zel",
                 SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, W, H, SDL_WINDOW_SHOWN);

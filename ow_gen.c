@@ -809,7 +809,6 @@ void ow_gen()
 {
         int traverse_count = 0;
 
-        srand(time(NULL));
 
         //cook_corners();
         cook_squares();
